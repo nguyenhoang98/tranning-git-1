@@ -9,4 +9,7 @@ Cat.prototype.eat = function (animal) {
     throw new Error('Không ăn được');
   }
 };
+Cat.prototype.greeting = function () {
+  console.log('Cat :  Hello');
+};
 module.exports = Cat;
