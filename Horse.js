@@ -3,4 +3,7 @@ function Horse(name, age, weight) {
   this.age = age;
   this.weight = weight;
 }
+Horse.prototype.run = function () {
+  console.log('Running');
+};
 module.exports = Horse;
