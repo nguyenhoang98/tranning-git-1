@@ -1,4 +1,12 @@
-function Cart(name) {
-  this.name = name;
+const Mouse = require('./Mouse');
+function Cat() {
+  this.stomach = [];
 }
-module.exports = Cart;
+Cat.prototype.eat = function (animal) {
+  if (animal instanceof Mouse) {
+    this.stomach.push(animal);
+  } else {
+    throw new Error('Không ăn được');
+  }
+};
+module.exports = Cat;
